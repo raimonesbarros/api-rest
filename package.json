@@ -1,0 +1,32 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "20.6.0",
+    "@types/supertest": "^2.0.12",
+    "supertest": "^6.3.3",
+    "tsup": "^7.2.0",
+    "tsx": "3.12.10",
+    "typescript": "5.2.2",
+    "vitest": "^0.34.4"
+  },
+  "dependencies": {
+    "@fastify/cookie": "9.0.4",
+    "dotenv": "16.3.1",
+    "fastify": "4.23.1",
+    "knex": "2.5.1",
+    "sqlite3": "5.1.6",
+    "zod": "3.22.2"
+  }
+}
