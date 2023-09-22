@@ -2,6 +2,9 @@
   "name": "api-rest",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": ">=18"
+  },
   "main": "index.js",
   "scripts": {
     "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
@@ -26,6 +29,7 @@
     "dotenv": "16.3.1",
     "fastify": "4.23.1",
     "knex": "2.5.1",
+    "pg": "^8.11.3",
     "sqlite3": "5.1.6",
     "zod": "3.22.2"
   }
